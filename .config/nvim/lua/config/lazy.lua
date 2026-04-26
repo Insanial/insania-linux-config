@@ -14,12 +14,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local ghproxy = "https://ghfast.top/"
-
 require("lazy").setup({
-  git = {
-    url_format = ghproxy .. "https://github.com/%s.git",␍
-  },
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
