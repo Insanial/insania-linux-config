@@ -116,3 +116,9 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # git Responsity: .cfg
 alias config='/usr/bin/git --git-dir=/home/insania/.cfg/ --work-tree=/home/insania'
+# lazygit Responsity: cfg
+alias config-lg='/home/insania/go/bin/lazygit --git-dir=/home/insania/.cfg/ --work-tree=/home/insania'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
